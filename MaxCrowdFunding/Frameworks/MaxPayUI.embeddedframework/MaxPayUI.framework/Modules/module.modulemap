@@ -1,0 +1,6 @@
+framework module MaxPayUI {
+  umbrella header "MaxPayUI.h"
+
+  export *
+  module * { export * }
+}

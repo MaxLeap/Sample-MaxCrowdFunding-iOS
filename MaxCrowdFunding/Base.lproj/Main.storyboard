@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController storyboardIdentifier="MCHomeViewController" id="9pv-A4-QxB" customClass="MCHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jm7-AL-l6G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="-320"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="nPH-QO-9KK">
+            <objects>
+                <viewController storyboardIdentifier="MCMeViewController" id="jal-T0-WQ5" customClass="MCMeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="96d-el-jJY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xcz-Eg-DTM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lDV-Ih-Pjc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的" id="IdZ-xg-Esv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFn-dC-cSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1039"/>
+        </scene>
+        <!--发起众筹-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController storyboardIdentifier="MCPostCFViewController" id="8rJ-Kc-sve" customClass="MCPostCFViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d09-MQ-mWj">
+                                <rect key="frame" x="280" y="530" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Q1-Qr-fdo"/>
+                                    <constraint firstAttribute="width" constant="40" id="gwy-0l-SSX"/>
+                                </constraints>
+                                <state key="normal" image="icn_lauch_close"/>
+                                <connections>
+                                    <action selector="cancelAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="nbb-Tk-MDb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFh-3C-1Z0" customClass="MCPostButton">
+                                <rect key="frame" x="193.5" y="290" width="103" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7jW-IN-Yhb"/>
+                                    <constraint firstAttribute="width" constant="103" id="Pfd-hs-ryA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="梦想" image="icn_launch_aixin">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postDreamCFAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="1cK-3N-cJP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em6-JS-C7r" customClass="MCPostButton">
+                                <rect key="frame" x="306.5" y="290" width="103" height="150"/>
+                                <state key="normal" title="产品" image="icn_launch_chanpin">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postProductCFAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="CSv-n8-zla"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="em6-JS-C7r" firstAttribute="width" secondItem="SFh-3C-1Z0" secondAttribute="width" id="2JR-M4-6xY"/>
+                            <constraint firstItem="em6-JS-C7r" firstAttribute="bottom" secondItem="SFh-3C-1Z0" secondAttribute="bottom" id="2WQ-lj-2sb"/>
+                            <constraint firstItem="em6-JS-C7r" firstAttribute="height" secondItem="SFh-3C-1Z0" secondAttribute="height" id="6UK-HR-xDc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="SFh-3C-1Z0" secondAttribute="bottom" constant="160" id="AYt-MO-aVf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="d09-MQ-mWj" secondAttribute="bottom" constant="30" id="GJl-LD-HRk"/>
+                            <constraint firstItem="SFh-3C-1Z0" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" constant="-55" id="Pus-1q-MIY"/>
+                            <constraint firstItem="d09-MQ-mWj" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="VEp-cz-sSe"/>
+                            <constraint firstItem="em6-JS-C7r" firstAttribute="leading" secondItem="SFh-3C-1Z0" secondAttribute="trailing" constant="10" id="b3j-cH-ajE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="发起众筹" id="eP0-OM-Zej"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="347"/>
+        </scene>
+        <!--Tabbar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="MCTabbarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xel-bn-Zjm" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Ijm-9T-4tt" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="MSF-Ub-tjF" kind="relationship" relationship="viewControllers" id="G5N-Gv-5mJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--众筹-->
+        <scene sceneID="KOa-iR-jFB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xel-bn-Zjm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="众筹" image="btn_zhongchou_tabbar_normal" selectedImage="btn_zhongchou_tabbar_selected" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HK8-pg-fz5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Rod-yp-KC4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNy-nI-RtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qpy-AA-mDF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ijm-9T-4tt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icn_launch_homepage" id="cPa-gy-q4n">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YJ9-I2-hsz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="1s7-di-3SL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIU-CT-3FU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="347"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="IGB-MI-i1s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MSF-Ub-tjF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="btn_user profiles_normal" selectedImage="btn_user profiles_selected" id="dOF-5L-maB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eGr-B7-pMt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jal-T0-WQ5" kind="relationship" relationship="rootViewController" id="Vpb-Yv-1uE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eK-sB-ypX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="1039"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_user profiles_normal" width="25" height="25"/>
+        <image name="btn_user profiles_selected" width="25" height="25"/>
+        <image name="btn_zhongchou_tabbar_normal" width="25" height="25"/>
+        <image name="btn_zhongchou_tabbar_selected" width="25" height="25"/>
+        <image name="icn_lauch_close" width="20" height="20"/>
+        <image name="icn_launch_aixin" width="129" height="121"/>
+        <image name="icn_launch_chanpin" width="129" height="121"/>
+        <image name="icn_launch_homepage" width="48" height="32"/>
+    </resources>
+</document>
